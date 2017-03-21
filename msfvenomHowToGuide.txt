@@ -1,0 +1,26 @@
+
+Msf console commands only available in the msf framework console (not this)
+
+Do not forget to PORT FORWARD your traffic from router to your actual attacking machine.
+
+Upon execution of a REVERSE payload, it goes like this...
+
+
+Victim --------port 80 or 443----------> World Wide Web ---------port 80 or 443----------> Your Router ------------port 4444 or 8080----------> Your attacking machine
+
+So if the Victim is.... 12.23.34.45
+
+And I am.... 98.87.65.54 "Public IP", and 10.0.1.2 "Private IP"
+
+Then its gonna be...
+
+Victim Executables Payload (12.23.34.45)
+---Exits their router through port 443---
+Reaches MY ROUTER (98.87.65.54)
+---Still port 443---
+Router redirects that traffic to my machine (10.0.1.2)
+---To port 8080---
+
+Does this make sense? That way you do not expose port 8080 (or whatever you choose on your listener),
+which would have been REALLY bad (someone could have landed a bind shell on you)
+Basically, we are using the magic of SSH Tunneling to safely get a Meterpreter shell running

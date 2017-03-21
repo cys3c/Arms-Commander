@@ -1,0 +1,53 @@
+This is the official report on how the Vault 7 Reverse-Engineering Project Shall be organized
+By Chang Tan Lister
+
+The menu structure goes as so...
+
+ArmsCommander.py
+== OTHER MENUS UNRELATED TO CIA CYBERWARFARE PROGRAM ==
+
+## At this point, all of the capabilities documented by WikiLeaks shall be organized by the authoring Branch of the Center for Cyber Intelligence for the CIA ##
+
+==  Vault 7 Reverse Engineered Exploit Menu ==
+          == #1. Embedded Development Branch ==
+                                  == Goal/Capability ==
+                                    ==  Exploit ==
+                                      ==  Method ==
+                                          == Installation of Toolkits ==
+                                          == Configuring Toolkit ==
+                                          == Preset Attack Script ==
+          == #2. Remote Development Branch== ,
+                                  == Goal/Capability ==
+                                    ==  Exploit ==
+                                      ==  Method ==
+                                        == Installation of Toolkits ==
+                                        == Configuring Toolkit ==
+                                        == Preset Attack Script ==
+          == #3. Operational Support Branch == ,
+                                  == Goal/Capability ==
+                                    ==  Exploit ==
+                                      ==  Method ==
+                                        == Installation of Toolkits ==
+                                        == Configuring Toolkit ==
+                                        == Preset Attack Script ==
+          == #4. Mobile Development Branch == ,
+                                  == Goal/Capability ==
+                                    ==  Exploit ==
+                                      ==  Method ==
+                                        == Installation of Toolkits ==
+                                        == Configuring Toolkit ==
+                                        == Preset Attack Script ==
+          == #5. Automated Implant Branch == ,
+                                  == Goal/Capability ==
+                                    ==  Exploit ==
+                                      ==  Method ==
+                                        == Installation of Toolkits ==
+                                        == Configuring Toolkit ==
+                                        == Preset Attack Script ==
+          == #6. Network Devices Branch ==
+                                  == Goal/Capability ==
+                                    ==  Exploit ==
+                                      ==  Method ==
+                                        == Installation of Toolkits ==
+                                        == Configuring Toolkit ==
+                                        == Preset Attack Script ==

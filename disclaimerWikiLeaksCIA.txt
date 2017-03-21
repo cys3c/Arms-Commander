@@ -1,0 +1,15 @@
+DISCLAIMER:
+
+The majority of these menu options will NOT WORK because they are still in the process of being reverse-engineered.
+These menu options serve only as placeholders for future project and anticipated "leaks".
+
+As of March 7th, 2017, the WikiLeaks Release has failed to provide concise source code.
+The title of the "leak" is known as "Vault 7", located here: https://wikileaks.org/ciav7p1/
+Instead of anything heavily detailed, it appears to be a broad-overview, somewhat like a "mission-briefing".
+However this is only the first of what will be many new leaks that they are planning to release. 
+
+The likelihood that the source code could be released to the public is impossible.
+Instead we are going to have to apply our understanding of their research to rebuild it from scratch
+
+I propose that we adapt components of other malware, such as the "Mirai Botnet Source Code" available on GitHub,
+In order to find a method to get at least a notable portion of these rumored exploits working
