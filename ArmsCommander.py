@@ -377,7 +377,7 @@ def batteryEight():
         '\n\t#0 Return to Main Menu',
         '#1. Metasploit Framework',
         '#2. Armitage',
-        '#3. MSF-Venom',
+        '#3. Easy-Peasey, MSFVenom Payload Generator',
         '#4. Veil-Evasion',
         '#5. Social Engineers Toolkit'
     ]
@@ -416,7 +416,7 @@ def armitage():
 
 
 def msfvenom():
-    os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/msfvenom.py; exec bash\"'")
+    os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/EZPZ.py; exec bash\"'")
     return
 
 def veilevasion():
