@@ -1,0 +1,30 @@
+
+
+██████╗  █████╗ ██████╗     ██╗   ██╗███████╗██████╗
+██╔══██╗██╔══██╗██╔══██╗    ██║   ██║██╔════╝██╔══██╗
+██████╔╝███████║██║  ██║    ██║   ██║███████╗██████╔╝
+██╔══██╗██╔══██║██║  ██║    ██║   ██║╚════██║██╔══██╗
+██████╔╝██║  ██║██████╔╝    ╚██████╔╝███████║██████╔╝
+╚═════╝ ╚═╝  ╚═╝╚═════╝      ╚═════╝ ╚══════╝╚═════╝
+
+ █████╗ ████████╗████████╗ █████╗  ██████╗██╗  ██╗███████╗
+██╔══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝██╔════╝
+███████║   ██║      ██║   ███████║██║     █████╔╝ ███████╗
+██╔══██║   ██║      ██║   ██╔══██║██║     ██╔═██╗ ╚════██║
+██║  ██║   ██║      ██║   ██║  ██║╚██████╗██║  ██╗███████║
+╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝
+
+
+
+DISCLAIMER:
+
+There are several ways to perform a BadUSB attack. You can...
+
+A. Follow this guide to make a simple cheap USB drive into one, albeit compatible microcontrollers are hard to find in 2017 https://null-byte.wonderhowto.com/how-to/make-your-own-bad-usb-0165419/
+B. Buy a USB Rubber Ducky, which has everything you need and is faster https://hakshop.com/products/usb-rubber-ducky-deluxe
+C. Convert a mobile device into a BadUSB attack vector, such as Kali Nethunter https://www.kali.org/kali-linux-nethunter/
+
+All three options (and then some) all make your device act like a HID Keyboard, allowing you to potentially run commands on the victim's machine as root
+
+With custom firmware such as Twin-Duck (included in this suite via Ducky-Flasher), you can also carry your own payloads with you.
+That means you can drop in a fully inline reverse Meterpreter RAT (Remote Administration Tool) UNDETECTED.

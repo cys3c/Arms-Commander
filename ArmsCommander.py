@@ -27,12 +27,19 @@ show_banner = True
 
 def bannerPage():
     os.system('cat /root/ArmsCommander/ACBanner.txt')
-    print colored('Arms Commander v0.0.3 by Chang Tan Lister, Limited Release, Alpha Implementation','red','on_white')
+    print colored('Arms Commander v0.0.4 by Chang Tan Lister, Limited Release, Alpha Implementation','red','on_white')
     print """
     Welcome to "Arms Commander", the premier command console for preset initial hacking attacks on dedicated "Hacker Battleships".
     """
     print colored('New Features','red','on_white')
     print """
+    Version v0.0.4
+    !!!! Added BadUSB Attack Options
+    !!!! DuckyFlasher is included in the suite
+    !!!! DuckEncoder is included
+    !!!! New Installer Scripts for DFU-Reprogramming for Malicious Thumbdrives
+
+    Version v0.0.3
     !!!! Streamlined and reorganized Main Menu
     !!!! A Android APK malware injector and java signer, requires installation of the APKTool in your respective repo
     !!!! Linux Terminal Command to Start AC, type "ArmsCommander.py"
@@ -419,6 +426,10 @@ def veilevasion():
 def socialengineertoolkit():
     os.system("gnome-terminal -e 'bash -c \"set; exec bash\"'")
 
+def batteryNine():
+    os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/BadUSBAttacks.py; exec bash\"'")
+    main_Menu()
+    return
 
 def main_Menu_Decision_Loop():
     main_Opt_Choice = str(raw_input("CHOICE: "))
@@ -446,6 +457,9 @@ def main_Menu_Decision_Loop():
     elif main_Opt_Choice == "8":
         os.system('clear')
         batteryEight()
+    elif main_Opt_Choice == "9":
+        os.system('clear')
+        batteryNine()
     elif main_Opt_Choice == "INSTALL":
         os.system('clear')
         installer()
@@ -469,6 +483,7 @@ main_Opt_List = [
                 '#6. Battery Six: ACTVE NETWORK DEFENSES, terminate connections with NGrep and TCPKill, change your MAC address',
                 '#7. Battery Seven: BOOTERS',
                 '#8. Battery Eight: REMOTE EXPLOITATION, Metasploit, MSFVenom, Armitage, Veil-Evasion, Social Engineer Tookit',
+                '#9. Battery Nine: BAD USB ATTACKS, Use the BadUSB Vulnerability to deliver undetectable attacks by thumbdrive',
                 'Type INSTALL in ALL CAPS if you require a installation of the toolkit'
 ]
 
