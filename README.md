@@ -35,4 +35,4 @@ The main directory is /root/ArmsCommander
 2. Disregard the SSH Hash brute-forcer from Violent Python, it MIGHT be bugged since it keeps returning broken keys
 3. Incoporate the zip file cracker. Personally, I'd prefer just using the fcrackzip syntax because the Violent Python version appears to be bugged, it keeps returning more passwords after it found the first one. However, both fcrackzip and the Violent Python unzip.py managed to crack the password from the DarkComet release that I forked. The password for setup.zip is "infected", all lowercase, when using the RockYou wordlist.
 4. For 7z file formats, which has much better encryption, consider http://davidalexandermejia.blogspot.com/2016/06/cracking-7z-files-using-john-ripper.html
-5. DO NOT RELEASE DARKCOMET, Not Yet! There is something fishy about the files from RAT-Master. It's a binary only file for setup.exe. Test it in a VM with a very close eye to ensure that it is not a reverse shell or trojan. 
+5. Add the exifFetch.py program that I made from Violent Python. It seems really handy but hard to find image files with exif metadata (at least not ones with GPS metadata) these days.
