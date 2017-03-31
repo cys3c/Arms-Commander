@@ -29,3 +29,8 @@ The main directory is /root/ArmsCommander
 #For reasons of your personal preference and security, I did not make it mandatory to install APKTools, Java or Ruby
 #You will have to install them yourself if you want to use the APK Malware Injection Toolkit
 #However, it's just a apt-get install away, and the required scripts and Java Signing Utilities are including in ArmsCommander regardless.
+
+# Other Projects Pending
+1. Consider adding a few of the things I learned from Violent Python, particularly the SSH Botnet Commander, as well as the SSH bruteforcer.
+2. Disregard the SSH Hash brute-forcer from Violent Python, it MIGHT be bugged since it keeps returning broken keys
+3. Incoporate the zip file cracker. Personally, I'd prefer just using the fcrackzip syntax because the Violent Python version appears to be bugged, it keeps returning more passwords after it found the first one
