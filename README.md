@@ -47,4 +47,26 @@ This will walk you through the new revamped menu allowing you to (through msfven
 5. Add the exifFetch.py program that I made from Violent Python. It seems really handy but hard to find image files with exif metadata (at least not ones with GPS metadata) these days.
 6. "KtM Strike", or "Kill the Mailman Strike", it's the 2017 Adaption of the Kevin Mitnick Attack of December 25, 1994. It probably only works on low-end infrastructure websites, in other words, "personal sites" like... "My Cat Bob". I only managed to achieve this once and failed to take advantage of the window of opportunity in time. I need to replicate this, but due to the massive bandwidth capacity of modern broadband, it can take hours to properly match the TCP sequence. 
 7. The "Twitter Stalker" Example in Chapter 6 of Violent Python is more of a proof of concept than anything concrete. For one, the author, probably out of concern on who would be reading his book, neglected to provide a complete dictionary of hashtags and geolocations to stalk the tweets of anyone other than the Red Sox. However, the social network info gathering part may be useful. It will take significantly more time to implement that however. Meanwhile, there are several APIs to consider. Facebook, MySpace, Tumblr, etc. Only two APIs were covered in detail, Twitter and Google.
+  EDIT: Well that sucks. Looks like this technique has been patched (after so long since the publishing of the book!)
+    File "/root/Documents/Violent-Python-Exercises-master/twitterClass.py", line 10, in __init__
+    self.tweets = self.get_tweets()
+  File "/root/Documents/Violent-Python-Exercises-master/twitterClass.py", line 18, in get_tweets
+    response = browser.open('http://search.twitter.com' + 'search.json?q=' + query)
+  File "/usr/lib/python2.7/dist-packages/mechanize/_mechanize.py", line 203, in open
+    return self._mech_open(url, data, timeout=timeout)
+  File "/usr/lib/python2.7/dist-packages/mechanize/_mechanize.py", line 230, in _mech_open
+    response = UserAgentBase.open(self, request, data)
+  File "/usr/lib/python2.7/dist-packages/mechanize/_opener.py", line 193, in open
+    response = urlopen(self, req, data)
+  File "/usr/lib/python2.7/dist-packages/mechanize/_urllib2_fork.py", line 344, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/dist-packages/mechanize/_urllib2_fork.py", line 332, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/dist-packages/mechanize/_urllib2_fork.py", line 1142, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/lib/python2.7/dist-packages/mechanize/_urllib2_fork.py", line 1118, in do_open
+    raise URLError(err)
+urllib2.URLError: <urlopen error [Errno -2] Name or service not known>
+
+
 8. Anonymous Googling part of Chapter 6 is indeed useful for those that are "paranoid". People still need to come to truths that there was never 100% privacy. A determined LE individual will still be able to get a ISP to reveal a person's info by order of a subpeona. 
