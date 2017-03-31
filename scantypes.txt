@@ -1,0 +1,22 @@
+For scantype when asked, please enter the OPTION NUMBER!
+Example, SYN Scan is "1" + [Enter]
+
+***TCP Scans***
+#1. SYN Scan (-sS)
+#2. Connect Scan (-sT)
+#3. ACK Scan (-sA)
+#4. Window Scan (-sW)
+#5. Maimon Scan(-sM)
+#6. Null Scan (-sN)
+#7. FIN Scan (-sF)
+#8. XMAS Scan (-sX)
+
+***UDP Scans***
+#9. UDP Scan (-sU)
+
+***Special Scans***
+#10. Zombie Host/Idle Scan (-sI)
+#11. SCTP INIT Scan (-sY)
+#12. Cookie-Echo Scan (-sZ)
+#13. IP protocol (-sO)
+#14. FTP Bounce Scan (-b)

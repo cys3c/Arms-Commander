@@ -55,6 +55,7 @@ def main():
         main()
     elif opt_Choice == "1":
         os.system("gnome-terminal -e 'bash -c \"sudo python /root/ArmsCommander/DPMB.py; exec bash\"'")
+        main()
     elif opt_Choice == "2":
         #placeholder for the DuckyFlasher Setup script
         DuckyFlasher()

