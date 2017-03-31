@@ -20,6 +20,15 @@ type "./autoInstallLinux.sh"
 Run AC by typing "ArmsCommander.py" in Terminal
 The main directory is /root/ArmsCommander
 
+# NEW: First How-To Video, "2017: Generating a Resilient Metasploit Payload with EasyPeasey and Veil-Evasion"
+https://github.com/tanc7/Arms-Commander/blob/master/DemonstrationOfFastPayloadGeneration.webm
+This will walk you through the new revamped menu allowing you to (through msfvenom)...
+1. Quickly choose a encoder
+2. Select iterations to encode
+3. Select a payload type/platform, arch
+4. Further alter the signature of the payload with Veil-Evasion
+5. Have a detection ratio of no more than 57% (according to VirusTotal, but then you gotta make a new one from scratch since it auto-submits to a database), or only 35 out of 61 antivirus programs are able to catch it via heuristics scanning.
+
 # DISCLAIMER
 #This is tested in Kali Linux ONLY
 #For Ubuntu and other Debian Derivatives, a lot of commands that AC runs will not work in the first place because it requires System-Level Root
