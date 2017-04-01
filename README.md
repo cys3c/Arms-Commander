@@ -70,3 +70,13 @@ urllib2.URLError: <urlopen error [Errno -2] Name or service not known>
 
 
 8. Anonymous Googling part of Chapter 6 is indeed useful for those that are "paranoid". People still need to come to truths that there was never 100% privacy. A determined LE individual will still be able to get a ISP to reveal a person's info by order of a subpeona. 
+
+9. The Credit Card Sniffer actually works somehow. Creepy. But it worked. It can differentiate between Mastercard, Visa, and American Express. It appears to be MITMing a unsecured wireless connection, or if you are in a session with the proper keys (you are the admin), it'll still work. This will definitely be incorporated, as a separate menu under AC. Like "Violent Python POCs". The same will go for "Black Hat Python POCs", since BHP tends to be more up to date. 
+
+10. The Pythonic Shellcode in a C-Wrapper trick, which is basically all of the first half of Chapter 7 has failed to execute properly. Not sure why. Copy and pasted the entire shell code and removed the buf = and buf += lines. 
+
+11. FTP sniffer is untested. Because I do not, and still would not use FTP. 
+
+12. The majority of the Chapter 1 examples are almost entirely worthless. The Zip file password cracker has a better equivalent in the apt repository, fcrackzip. 
+
+13. SendMail requires major updates to be viable. 
